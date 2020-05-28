@@ -1,0 +1,89 @@
+package ServicesScolarite;
+
+import java.util.logging.Logger;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+
+
+public class ModelTable {
+
+    public static Logger getLOG() {
+        return LOG;
+    }
+    private final  SimpleIntegerProperty orderid;
+    private final  SimpleIntegerProperty custid;
+    private final  SimpleStringProperty menuname;
+    private final  SimpleIntegerProperty qnt;
+    private final  SimpleStringProperty deliverytyp;
+    private final  SimpleStringProperty address;
+  
+    
+public ModelTable(int orderid,int custid, String menuname,
+            String deliverytyp,String address,int qnt) {
+        this.orderid = new SimpleIntegerProperty(orderid);
+        this.custid =new SimpleIntegerProperty(custid) ;
+        this.menuname = new SimpleStringProperty(menuname) ;
+        this.deliverytyp =new SimpleStringProperty(deliverytyp);
+        this.address = new SimpleStringProperty(address);
+        this.qnt=new SimpleIntegerProperty(qnt);
+    }
+
+    public int getQnt() {
+        return qnt.get();
+    }
+    private static final Logger LOG = Logger.getLogger(ModelTable.class.getName());
+    public void setQnt(int qnt) {
+        this.qnt.set(qnt);
+    }
+
+   
+
+    public int getOrderid() {
+        return orderid.get();
+    }
+
+    public void setOrderid(int orderid) {
+        this.orderid.set(orderid);
+    }
+
+    public int getCustid() {
+        return custid.get();
+    }
+
+    public void setCustid(int custid) {
+        this.custid.set(custid);
+    }
+     
+
+    public String getMenuname() {
+        return menuname.get();
+    }
+
+    public void setMenuname(String menuname) {
+        this.menuname.set(menuname);
+    }
+
+    public String getDeliverytyp() {
+        return deliverytyp.get();
+    }
+
+    public void setDeliverytyp(String deliverytyp) {
+        this.deliverytyp.set(deliverytyp);
+    }
+
+    public String getAddress() {
+        return address.get();
+    }
+
+    public void setAddress(String address) {
+        this.address.set(address);
+    }
+    
+
+       
+    
+  
+    
+    
+
+}

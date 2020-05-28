@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="520.0" stylesheets="@styleAjout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevfinal.AjoutAbsenceController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="555.0" prefWidth="522.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="299.0" prefWidth="466.0">
+               <children>
+                  <AnchorPane id="AnchorPane" prefHeight="555.0" prefWidth="516.0">
+                     <children>
+                        <Pane id="cadre1" layoutX="-2.0" prefHeight="50.0" prefWidth="530.0" styleClass="cadre1" stylesheets="@styleAjout.css">
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <children>
+                              <Label layoutX="14.0" layoutY="6.0" prefHeight="38.0" prefWidth="317.0" text="Ajouter une nouvelle absence " textFill="#eee7e7" textOverrun="CLIP">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="29.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane id="cadre2" layoutY="50.0" prefHeight="505.0" prefWidth="528.0" styleClass="cadre2" stylesheets="@styleAjout.css">
+                           <children>
+                              <Button id="button" fx:id="button" layoutX="244.0" layoutY="388.0" mnemonicParsing="false" onAction="#RésultatsAction" prefHeight="31.0" prefWidth="225.0" style="-fx-background-radius: 90; -fx-background-color: #FE96A0;" stylesheets="@styleAjout.css" text="Ajouter" />
+                              <Label layoutX="27.0" layoutY="96.0" prefHeight="38.0" prefWidth="92.0" text="Eleves : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="32.0" layoutY="27.0" prefHeight="38.0" prefWidth="102.0" text="Classe : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="221.0" prefHeight="38.0" prefWidth="112.0" text="heure : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="285.0" prefHeight="38.0" prefWidth="112.0" text="Matiere : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="159.0" prefHeight="38.0" prefWidth="150.0" text="Enseignant : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="niveaux" layoutX="198.0" layoutY="31.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="test" layoutX="189.0" layoutY="100.0" onMouseClicked="#testEleve" prefWidth="150.0" />
+                              <ChoiceBox fx:id="testEns" layoutX="189.0" layoutY="163.0" onMouseClicked="#testEns" prefWidth="150.0" />
+                              <ChoiceBox fx:id="heure" layoutX="189.0" layoutY="225.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="matiere" layoutX="189.0" layoutY="289.0" prefWidth="150.0" />
+                              <Label fx:id="msg" layoutX="59.0" layoutY="438.0" prefHeight="21.0" prefWidth="317.0" textFill="#bc1717">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

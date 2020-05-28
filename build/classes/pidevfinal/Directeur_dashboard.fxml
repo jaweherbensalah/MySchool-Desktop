@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #FFE7D5;" stylesheets="@styleAjout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevfinal.Directeur_dashboardController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="301.0" style="-fx-background-color: #FF6F7D;">
+         <children>
+            <AnchorPane prefHeight="229.0" prefWidth="276.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="14.0" prefHeight="34.0" prefWidth="264.0" text="Année scolaire:  2020/2021" textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="85.0" layoutY="81.0" prefHeight="32.0" prefWidth="112.0" text="My school ">
+                     <font>
+                        <Font name="Monotype Corsiva" size="24.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="124.0" prefHeight="8.0" prefWidth="262.0" style="-fx-background-color: #FFFFFF;" />
+                  <Button id="button" fx:id="dashboard" layoutX="94.0" layoutY="146.0" mnemonicParsing="false" onAction="#dashboardButtonAction" prefHeight="36.0" prefWidth="158.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@styleAjout.css" text="Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="27.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="dash" fitHeight="64.0" fitWidth="85.0" layoutX="18.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/EYA/maison-png-8.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="ecole" fitHeight="64.0" fitWidth="52.0" layoutX="18.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/EYA/high-school.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="-2.0" layoutY="211.0" prefHeight="8.0" prefWidth="267.0" style="-fx-background-color: #FFFFFF;" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="233.0" prefHeight="101.0" prefWidth="270.0">
+               <children>
+                  <Button id="button" fx:id="enseignant" layoutX="64.0" mnemonicParsing="false" onAction="#enseignantButtonAction" prefHeight="53.0" prefWidth="201.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@styleAjout.css" text="Enseignants " textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="32.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="ens" fitHeight="50.0" fitWidth="50.0" layoutX="23.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/EYA/90477.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="5.0" layoutY="60.0" prefHeight="8.0" prefWidth="281.0" style="-fx-background-color: #FFFFFF;" />
+                  <ImageView fx:id="res" fitHeight="64.0" fitWidth="62.0" layoutX="24.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/EYA/results-icon-png-12.png" />
+                     </image>
+                  </ImageView>
+                  <Button id="button" fx:id="Résultats" layoutX="119.0" layoutY="69.0" mnemonicParsing="false" onAction="#RésultatsButtonAction" prefHeight="57.0" prefWidth="146.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@styleAjout.css" text="Emplois" textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="28.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="355.0" prefHeight="153.0" prefWidth="277.0">
+               <children>
+                  <AnchorPane layoutX="-15.0" layoutY="14.0" prefHeight="8.0" prefWidth="292.0" style="-fx-background-color: #FFFFFF;" />
+                  <ImageView fx:id="trans" fitHeight="62.0" fitWidth="62.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/EYA/e06899eb675d084004067ef882f706d3.png" />
+                     </image>
+                  </ImageView>
+                  <Button id="button" fx:id="transport" layoutX="122.0" layoutY="25.0" mnemonicParsing="false" onAction="#transportButtonAction" prefHeight="58.0" prefWidth="158.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@styleAjout.css" text="Transport " textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="27.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="-2.0" layoutY="97.0" prefHeight="8.0" prefWidth="281.0" style="-fx-background-color: #FFFFFF;" />
+                  <Button id="button" fx:id="message" layoutX="141.0" layoutY="110.0" mnemonicParsing="false" onAction="#messageButtonAction" prefHeight="30.0" prefWidth="146.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@styleAjout.css" text="Message" textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="mes" fitHeight="57.0" fitWidth="50.0" layoutX="2.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/EYA/272.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="29.0" layoutY="504.0" prefHeight="36.0" prefWidth="179.0" />
+            <AnchorPane layoutX="8.0" layoutY="552.0" prefHeight="103.0" prefWidth="264.0">
+               <children>
+                  <AnchorPane layoutX="22.0" layoutY="93.0" prefHeight="52.0" prefWidth="262.0">
+                     <children>
+                        <Button id="button" fx:id="menu" layoutX="125.0" mnemonicParsing="false" onAction="#menuButtonAction" prefHeight="50.0" prefWidth="112.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@styleAjout.css" text="Menu" textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="29.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="me" fitHeight="50.0" fitWidth="46.0" layoutX="-20.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/3tvJykCGap5Qed228mt1KXL1.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane layoutX="34.0" layoutY="8.0" prefHeight="50.0" prefWidth="140.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="-10.0" layoutY="-4.0" prefHeight="8.0" prefWidth="292.0" style="-fx-background-color: #FFFFFF;" />
+                  <Button id="button" fx:id="evenement" layoutX="116.0" layoutY="10.0" mnemonicParsing="false" onAction="#evenementButtonAction" prefHeight="58.0" prefWidth="168.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@styleAjout.css" text="Evenement " textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="30.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="ev" fitHeight="61.0" fitWidth="76.0" layoutX="-3.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/EYA/datum-png-2.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="-13.0" layoutY="80.0" prefHeight="8.0" prefWidth="299.0" style="-fx-background-color: #FFFFFF;" />
+                  <AnchorPane layoutX="33.0" layoutY="47.0" prefHeight="50.0" prefWidth="231.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="547.0" layoutY="23.0" prefHeight="159.0" prefWidth="201.0" style="-fx-background-color: #FFBEAC;">
+         <children>
+            <ImageView fx:id="punT" fitHeight="73.0" fitWidth="61.0" layoutX="58.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/EYA/delete_delete_deleteusers_delete_male_user_maleclient_2348.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="15.0" layoutY="121.0" prefHeight="35.0" prefWidth="179.0" text="Total des Punitions">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="msg_pun" layoutX="149.0" layoutY="37.0" prefHeight="58.0" prefWidth="61.0" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="771.0" layoutY="23.0" prefHeight="159.0" prefWidth="201.0" style="-fx-background-color: #FFBEAC;">
+         <children>
+            <ImageView fx:id="eleT" fitHeight="83.0" fitWidth="61.0" layoutX="91.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/EYA/59495.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="47.0" layoutY="115.0" text="Total des Eleves">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="msg_ele" layoutX="161.0" layoutY="27.0" prefHeight="64.0" prefWidth="72.0" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1018.0" layoutY="23.0" prefHeight="159.0" prefWidth="182.0" style="-fx-background-color: #FFBEAC;">
+         <children>
+            <ImageView fx:id="ensT" fitHeight="73.0" fitWidth="59.0" layoutX="82.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/EYA/Teacher-male.png" />
+               </image>
+            </ImageView>
+            <Label layoutY="107.0" prefHeight="30.0" prefWidth="192.0" text="Total des Enseignants">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label fx:id="msg_ense" layoutX="142.0" layoutY="27.0" prefHeight="64.0" prefWidth="81.0" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="323.0" layoutY="23.0" prefHeight="159.0" prefWidth="201.0" style="-fx-background-color: #FFBEAC;">
+         <children>
+            <ImageView fx:id="absT" fitHeight="89.0" fitWidth="94.0" layoutX="56.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/EYA/unnamed%20(1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="6.0" layoutY="117.0" prefHeight="36.0" prefWidth="168.0" text="Total des Absences">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="msg_abs" layoutX="138.0" layoutY="27.0" prefHeight="64.0" prefWidth="72.0" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="612.0" layoutY="219.0" prefHeight="152.0" prefWidth="223.0" style="-fx-background-color: #FFBEAC;">
+         <children>
+            <ImageView fx:id="evT" fitHeight="83.0" fitWidth="81.0" layoutX="88.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/EYA/datum-png-2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="10.0" layoutY="114.0" prefHeight="35.0" prefWidth="249.0" text="Total des Evenements">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="msg_event" layoutX="156.0" layoutY="16.0" prefHeight="61.0" prefWidth="72.0" textFill="WHITE">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="im" fitHeight="488.0" fitWidth="933.0" layoutX="372.0" layoutY="399.0" onDragDetected="#AbonnementClickedButton" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="341.0" layoutY="218.0" prefHeight="146.0" prefWidth="249.0" style="-fx-background-color: #FFBEAC;">
+         <children>
+            <ImageView fx:id="absT1" fitHeight="89.0" fitWidth="94.0" layoutX="64.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/checked.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="msg_abs1" layoutX="163.0" layoutY="41.0" prefHeight="64.0" prefWidth="72.0" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Button layoutX="13.0" layoutY="117.0" mnemonicParsing="false" onAction="#AbonnementClickedButton" prefHeight="36.0" prefWidth="220.0" text="Valider Inscription " />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

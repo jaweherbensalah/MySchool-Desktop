@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="434.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevfinal.AjouterPunitionController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="298.0" prefWidth="462.0">
+         <children>
+            <Pane id="cadre1" layoutX="-2.0" prefHeight="50.0" prefWidth="475.0" styleClass="cadre1" stylesheets="@styleAjout.css">
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label layoutX="14.0" layoutY="6.0" prefHeight="38.0" prefWidth="286.0" text="Ajouter Punition" textFill="#eee7e7" textOverrun="CLIP">
+                     <font>
+                        <Font name="Monotype Corsiva" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="355.0" layoutY="10.0" mnemonicParsing="false" onAction="#retourAction" prefHeight="31.0" prefWidth="102.0" text="retour" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Pane id="cadre2" layoutX="-1.0" layoutY="50.0" prefHeight="387.0" prefWidth="473.0" styleClass="cadre2" stylesheets="@styleAjout.css">
+               <children>
+                  <Button id="button" fx:id="button" layoutX="209.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="225.0" style="-fx-background-radius: 90; -fx-background-color: #FE96A0;" stylesheets="@styleAjout.css" text="Ajouter" textFill="WHITE" />
+                  <Label layoutX="171.0" layoutY="97.0" prefHeight="38.0" prefWidth="102.0" text="Eleve : ">
+                     <font>
+                        <Font name="Monotype Corsiva" size="30.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="classes" layoutX="56.0" layoutY="51.0" onDragDetected="#afficherClasses" onMouseClicked="#afficherClasses" prefHeight="31.0" prefWidth="366.0" />
+                  <Label layoutX="171.0" layoutY="7.0" prefHeight="38.0" prefWidth="102.0" text="Classe : ">
+                     <font>
+                        <Font name="Monotype Corsiva" size="30.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="eleves" layoutX="54.0" layoutY="152.0" onDragDetected="#afficherEleves" onMouseClicked="#afficherEleves" prefHeight="31.0" prefWidth="366.0" />
+                  <Label fx:id="msg" layoutX="28.0" layoutY="295.0" prefHeight="38.0" prefWidth="225.0" textFill="#b92c2c">
+                     <font>
+                        <Font name="Monotype Corsiva" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="178.0" layoutY="205.0" prefHeight="38.0" prefWidth="102.0" text="Cause : ">
+                     <font>
+                        <Font name="Monotype Corsiva" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cause" layoutX="54.0" layoutY="256.0" prefHeight="31.0" prefWidth="359.0" promptText="cause" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
