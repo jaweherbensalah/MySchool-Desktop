@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="884.0" prefWidth="1216.0" style="-fx-background-color: #FFE7D5;" stylesheets="@../pidevfinal/styleAjout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myschoolgraphique.ClubsUserPageController">
+   <children>
+      <BorderPane fx:id="locationPane" layoutX="811.0" layoutY="430.0" prefHeight="221.0" prefWidth="350.0" />
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="841.0" prefWidth="1150.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutX="67.0" layoutY="255.0" prefHeight="564.0" prefWidth="1040.0" style="-fx-background-color: #FFE7D5;">
+               <children>
+                  <TextField fx:id="search" layoutX="527.0" layoutY="78.0" prefHeight="25.0" prefWidth="265.0" style="-fx-background-radius: 60;" />
+                  <Label layoutX="365.0" layoutY="78.0" prefHeight="31.0" prefWidth="128.0" text="Chercher " textFill="#ff6f7d">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="participer" layoutX="145.0" layoutY="78.0" mnemonicParsing="false" onAction="#participer" style="-fx-background-color: #FFBEAC;" text="s'inscrire" textFill="WHITE" />
+                  <ImageView fx:id="imgv" fitHeight="112.0" fitWidth="94.0" layoutX="11.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="326.0" layoutY="9.0" prefHeight="53.0" prefWidth="333.0" text=" Nos Clubs" textFill="#ff6f7d">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="23.0" layoutY="133.0" prefHeight="372.0" prefWidth="933.0">
+                     <content>
+                        <TableView fx:id="tableView" blendMode="GREEN" prefHeight="359.0" prefWidth="932.0">
+                           <columns>
+                              <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+                              <TableColumn fx:id="nom" onEditCommit="#update_Name" prefWidth="155.0" text="nomClub" />
+                              <TableColumn fx:id="description" onEditCommit="#update_Description" prefWidth="177.0" text="description" />
+                              <TableColumn fx:id="effectif" onEditCommit="#update_Effectif" prefWidth="239.0" text="effectif" />
+                              <TableColumn fx:id="domaine" onEditCommit="#update_Domaine" prefWidth="228.0" text="domaine" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="Home2" layoutX="1075.0" layoutY="57.0" mnemonicParsing="false" onAction="#HomeBack2" prefHeight="31.0" prefWidth="122.0" text="deconnexion" textFill="WHITE" />
+            <AnchorPane layoutX="-5.0" layoutY="95.0" prefHeight="160.0" prefWidth="1216.0" style="-fx-background-color: #3f3f3f;">
+               <children>
+                  <Button fx:id="Accueil" layoutX="14.0" layoutY="33.0" mnemonicParsing="false" onAction="#AccueilAction" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: #3f3f3f;" text="Accueil " textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="emplois" layoutX="160.0" layoutY="39.0" mnemonicParsing="false" onAction="#AfficherEmploisAction" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #3f3f3f;" text="Emploi du temps " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="restuarant" layoutX="519.0" layoutY="96.0" mnemonicParsing="false" onAction="#afficherEvent" prefHeight="51.0" prefWidth="158.0" style="-fx-background-color: #3f3f3f;" text="Events" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="transport" layoutX="668.0" layoutY="93.0" mnemonicParsing="false" onAction="#aficherclub" prefHeight="51.0" prefWidth="171.0" style="-fx-background-color: #3f3f3f;" text="Clubs" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="absence" layoutX="548.0" layoutY="32.0" mnemonicParsing="false" onAction="#afficherPunitionAction" prefHeight="60.0" prefWidth="205.0" style="-fx-background-color: #3f3f3f;" text="Punitions" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="punition" layoutX="910.0" layoutY="35.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="224.0" style="-fx-background-color: #3f3f3f;" text="Reclamations" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="absence1" layoutX="408.0" layoutY="31.0" mnemonicParsing="false" onAction="#afficherAbsenceAction" prefHeight="60.0" prefWidth="169.0" style="-fx-background-color: #3f3f3f;" text="Absences " textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <MenuButton layoutX="745.0" layoutY="35.0" mnemonicParsing="false" style="-fx-background-color: #3f3f3f;" text="resultats" textFill="WHITE">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#displayNote" text="notes" />
+                        <MenuItem mnemonicParsing="false" onAction="#displayBu" text="bulletin" />
+                     </items>
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </MenuButton>
+                  <Button fx:id="transport1" layoutX="7.0" layoutY="95.0" mnemonicParsing="false" onAction="#afficherTransportAction" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #3f3f3f;" text="ligne de transport " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="restuarant1" layoutX="231.0" layoutY="94.0" mnemonicParsing="false" onAction="#afficherRestauAction" prefHeight="54.0" prefWidth="265.0" style="-fx-background-color: #3f3f3f;" text="ligne de restaurants " textFill="WHITE">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="log1" fitHeight="88.0" fitWidth="303.0" layoutX="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../build/classes/images/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="428.0" layoutY="-4.0" prefHeight="53.0" prefWidth="190.0" text="My school" textFill="#ff6f7d">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="user" layoutX="1003.0" prefHeight="54.0" prefWidth="208.0" textFill="#ff6f7d">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

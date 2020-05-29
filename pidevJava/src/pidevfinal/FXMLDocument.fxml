@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="298.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevfinal.FXMLDocumentController">
+    <children>
+      <Pane id="cadre1" layoutX="-2.0" prefHeight="50.0" prefWidth="475.0" styleClass="cadre1" stylesheets="@styleAjout.css">
+         <effect>
+            <Glow />
+         </effect>
+         <children>
+            <Label layoutX="14.0" layoutY="6.0" prefHeight="38.0" prefWidth="286.0" text="Ajouter Nouvelle Classe " textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font name="Monotype Corsiva" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="cadre2" layoutX="-2.0" layoutY="50.0" prefHeight="250.0" prefWidth="473.0" styleClass="cadre2" stylesheets="@styleAjout.css">
+         <children>
+            <TextField id="textfield" fx:id="nom" layoutX="55.0" layoutY="58.0" prefHeight="31.0" prefWidth="363.0" promptText="nom" style="-fx-background-radius: 90;" styleClass="textfield" stylesheets="@styleAjout.css" />
+            <Button id="button" fx:id="button" layoutX="93.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="225.0" style="-fx-background-radius: 90; -fx-background-color: #FE96A0;" stylesheets="@styleAjout.css" text="Ajouter" textFill="WHITE" />
+            <Label layoutX="124.0" layoutY="96.0" prefHeight="38.0" prefWidth="225.0" text="Niveau Scolaire : ">
+               <font>
+                  <Font name="Monotype Corsiva" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="msgerreur" layoutX="30.0" layoutY="14.0" prefHeight="28.0" prefWidth="426.0" textFill="#f25353">
+               <font>
+                  <Font name="Britannic Bold" size="26.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="niveau" layoutX="62.0" layoutY="157.0" onDragDetected="#afficherNiveau" onMouseClicked="#afficherNiveau" onMouseDragEntered="#afficherNiveau" prefHeight="31.0" prefWidth="351.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="301.0" prefWidth="470.0" stylesheets="@styleAjout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevfinal.AffecterMatiereController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="472.0">
+         <children>
+            <AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="300.0" prefWidth="461.0">
+               <children>
+                  <AnchorPane id="AnchorPane" prefHeight="299.0" prefWidth="466.0">
+                     <children>
+                        <AnchorPane id="AnchorPane" prefHeight="298.0" prefWidth="462.0">
+                           <children>
+                              <Pane id="cadre1" layoutX="-2.0" prefHeight="50.0" prefWidth="475.0" styleClass="cadre1" stylesheets="@styleAjout.css">
+                                 <effect>
+                                    <Glow />
+                                 </effect>
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="6.0" prefHeight="38.0" prefWidth="286.0" text="Affecter une matiere " textFill="WHITE" textOverrun="CLIP">
+                                       <font>
+                                          <Font name="Monotype Corsiva" size="29.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                              <Pane id="cadre2" layoutX="-2.0" layoutY="50.0" prefHeight="250.0" prefWidth="473.0" styleClass="cadre2" stylesheets="@styleAjout.css">
+                                 <children>
+                                    <Button id="button" fx:id="button" layoutX="131.0" layoutY="205.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="31.0" prefWidth="225.0" style="-fx-background-radius: 90; -fx-background-color: #FE96A0;" stylesheets="@styleAjout.css" text="Ajouter" textFill="WHITE" />
+                                    <Label layoutX="160.0" layoutY="96.0" prefHeight="38.0" prefWidth="167.0" text="Enseignant : ">
+                                       <font>
+                                          <Font name="Monotype Corsiva" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="matieres" layoutX="56.0" layoutY="51.0" onDragDetected="#afficherMatieres" onMouseClicked="#afficherClasses" prefHeight="31.0" prefWidth="366.0" />
+                                    <Label layoutX="171.0" layoutY="7.0" prefHeight="38.0" prefWidth="135.0" text="Matiere : ">
+                                       <font>
+                                          <Font name="Monotype Corsiva" size="30.0" />
+                                       </font>
+                                    </Label>
+                                    <ChoiceBox fx:id="enseignants" layoutX="54.0" layoutY="152.0" onDragDetected="#afficherEnseignant" onMouseClicked="#afficherEnseignant" prefHeight="31.0" prefWidth="366.0" />
+                                    <Label fx:id="msg" layoutX="339.0" layoutY="115.0" prefHeight="21.0" prefWidth="102.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

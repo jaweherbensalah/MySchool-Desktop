@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="846.0" stylesheets="@styleAjout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevfinal.AjoutEmploiController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="rootPane" layoutY="-10.0" prefHeight="459.0" prefWidth="543.0">
+         <children>
+            <AnchorPane id="AnchorPane" layoutY="13.0" prefHeight="566.0" prefWidth="535.0">
+               <children>
+                  <AnchorPane id="AnchorPane" layoutY="-3.0" prefHeight="555.0" prefWidth="519.0">
+                     <children>
+                        <Pane id="cadre1" layoutX="-1.0" prefHeight="54.0" prefWidth="846.0" styleClass="cadre1" stylesheets="@styleAjout.css">
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <children>
+                              <Label layoutX="14.0" layoutY="6.0" prefHeight="38.0" prefWidth="317.0" text="ajouter un Emploi " textFill="#eee7e7" textOverrun="CLIP">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="29.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane id="cadre2" layoutY="54.0" prefHeight="584.0" prefWidth="846.0" styleClass="cadre2" stylesheets="@styleAjout.css">
+                           <children>
+                              <Button id="button" fx:id="button" layoutX="605.0" layoutY="532.0" mnemonicParsing="false" onAction="#RésultatsAction" prefHeight="31.0" prefWidth="225.0" style="-fx-background-radius: 90; -fx-background-color: #FE96A0;" stylesheets="@styleAjout.css" text="Ajouter" textFill="WHITE" />
+                              <Label layoutX="32.0" layoutY="27.0" prefHeight="38.0" prefWidth="102.0" text="Classe : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="18.0" layoutY="175.0" prefHeight="38.0" prefWidth="164.0" text="seance 1 ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="264.0" prefHeight="38.0" prefWidth="150.0" text="Enseignant : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="niveaux" layoutX="203.0" layoutY="31.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="testEns" layoutX="196.0" layoutY="264.0" onMouseClicked="#testEns" prefWidth="150.0" />
+                              <ChoiceBox fx:id="heure" layoutX="189.0" layoutY="178.0" prefWidth="150.0" />
+                              <Label fx:id="msg" layoutX="14.0" layoutY="505.0" prefHeight="38.0" prefWidth="271.0" textFill="#bc1717">
+                                 <font>
+                                    <Font size="37.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="heuref" layoutX="557.0" layoutY="178.0" prefWidth="150.0" />
+                              <Label layoutX="391.0" layoutY="28.0" prefHeight="38.0" prefWidth="102.0" text="Jour : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="jours" layoutX="476.0" layoutY="32.0" prefWidth="150.0" />
+                              <Label layoutX="309.0" layoutY="96.0" prefHeight="46.0" prefWidth="180.0" text="Matin " textFill="WHITE">
+                                 <font>
+                                    <Font size="31.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="309.0" layoutY="321.0" prefHeight="36.0" prefWidth="164.0" text="Apres midi " textFill="WHITE">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="heure2" layoutX="203.0" layoutY="386.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="testEns1" layoutX="567.0" layoutY="264.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="testEns3" layoutX="203.0" layoutY="464.0" prefWidth="150.0" />
+                              <Label layoutX="407.0" layoutY="171.0" prefHeight="38.0" prefWidth="117.0" text="seance 2">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="384.0" layoutY="261.0" prefHeight="38.0" prefWidth="150.0" text="Enseignant : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                                 <graphic>
+                                    <Label prefHeight="38.0" prefWidth="150.0" text="Enseignant : ">
+                                       <font>
+                                          <Font name="Monotype Corsiva" size="30.0" />
+                                       </font>
+                                    </Label>
+                                 </graphic>
+                              </Label>
+                              <Label layoutX="32.0" layoutY="383.0" prefHeight="38.0" prefWidth="102.0" text="seance 1 ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="457.0" prefHeight="38.0" prefWidth="150.0" text="Enseignant : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="415.0" layoutY="383.0" prefHeight="38.0" prefWidth="117.0" text="seance 2">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                              <ChoiceBox fx:id="heuref1" layoutX="557.0" layoutY="387.0" prefWidth="150.0" />
+                              <ChoiceBox fx:id="testEns4" layoutX="557.0" layoutY="464.0" prefWidth="150.0" />
+                              <Label layoutX="391.0" layoutY="457.0" prefHeight="38.0" prefWidth="150.0" text="Enseignant : ">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="30.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
