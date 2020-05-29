@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentServices.FXML1Controller">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1254.0" style="-fx-background-color: #FFE7D5;" stylesheets="@../pidevfinal/styleAjout.css">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="182.0" layoutY="705.0" onAction="#signupScreen" prefHeight="51.0" prefWidth="268.0" text="S'inscrire aux services" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="917.0" layoutY="705.0" onAction="#loginScreen" prefHeight="51.0" prefWidth="249.0" text="consulter vos services " textFill="WHITE" />
+            <Label layoutX="628.0" layoutY="216.0" opacity="0.7" prefHeight="35.0" prefWidth="194.0" textAlignment="CENTER">
+               <font>
+                  <Font name="Lucida Sans Regular" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="956.0" layoutY="662.0" prefHeight="35.0" prefWidth="172.0" text=" Déjà inscrit ?? ">
+               <font>
+                  <Font name="SansSerif Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="190.0" layoutY="630.0" prefHeight="63.0" prefWidth="236.0" text="Nouvelle Inscription? ">
+               <font>
+                  <Font name="SansSerif Bold" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="248.0" fitWidth="577.0" layoutX="465.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/enfants-ecole.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="-4.0" layoutY="105.0" prefHeight="146.0" prefWidth="1261.0" style="-fx-background-color: #3f3f3f;">
+               <children>
+                  <Button fx:id="Accueil" layoutX="14.0" layoutY="17.0" mnemonicParsing="false" onAction="#AccueilAction" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: #3f3f3f;" text="Accueil " textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="emplois" layoutX="169.0" layoutY="22.0" mnemonicParsing="false" onAction="#AfficherEmploisAction" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #3f3f3f;" text="Emploi du temps " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="absence" layoutX="417.0" layoutY="18.0" mnemonicParsing="false" onAction="#afficherAbsenceAction" prefHeight="60.0" prefWidth="169.0" style="-fx-background-color: #3f3f3f;" text="Absences " textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="punition" layoutX="623.0" layoutY="22.0" mnemonicParsing="false" onAction="#afficherPunitionAction" prefHeight="60.0" prefWidth="169.0" style="-fx-background-color: #3f3f3f;" text="Punitions  " textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="resultat" layoutX="851.0" layoutY="17.0" mnemonicParsing="false" onAction="#afficherRseultatAction" prefHeight="60.0" prefWidth="169.0" style="-fx-background-color: #3f3f3f;" text="Resultats" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="reclamation" layoutX="1042.0" layoutY="22.0" mnemonicParsing="false" onAction="#afficherReclamationAction" prefHeight="51.0" prefWidth="177.0" style="-fx-background-color: #3f3f3f;" text="Reclamations" textFill="WHITE">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="transport" layoutX="14.0" layoutY="78.0" mnemonicParsing="false" onAction="#afficherTransportAction" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #3f3f3f;" text="ligne de transport " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="restuarant" layoutX="281.0" layoutY="78.0" mnemonicParsing="false" onAction="#afficherRestaurantAction" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #3f3f3f;" text="ligne de restaurants " textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="pun" layoutX="785.0" layoutY="22.0" prefHeight="51.0" prefWidth="66.0" textFill="#eb0d0d">
+                     <font>
+                        <Font size="41.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="abs" layoutX="568.0" layoutY="22.0" prefHeight="60.0" prefWidth="66.0" textFill="#eb0d0d">
+                     <font>
+                        <Font size="41.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="532.0" layoutY="31.0" prefHeight="53.0" prefWidth="190.0" text="My school" textFill="#ff6f7d">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="logo" fitHeight="122.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Desktop/EYA/logo.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="1041.0" layoutY="-9.0" prefHeight="120.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="user" layoutX="3.0" layoutY="14.0" prefHeight="54.0" prefWidth="208.0" textFill="#ff6f7d">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="deconnexion" layoutX="55.0" layoutY="75.0" mnemonicParsing="false" onAction="#DeconnexionAction" prefHeight="31.0" prefWidth="158.0" text="se deconnexion " textFill="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="475.0" layoutY="291.0" prefHeight="54.0" prefWidth="430.0" text="Espace Vie d'élève" textFill="#ff6f7d">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

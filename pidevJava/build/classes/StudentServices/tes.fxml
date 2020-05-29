@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="841.0" prefWidth="1150.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="StudentServices.TesController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="841.0" prefWidth="1150.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="841.0" prefWidth="1150.0" style="-fx-background-color: #FFE7D5;" stylesheets="@../pidevfinal/styleAjout.css">
+               <children>
+                  <AnchorPane id="AnchorPane" layoutY="244.0" prefHeight="597.0" prefWidth="1201.0" style="-fx-background-color: #FFE7D5;">
+                     <children>
+                        <ImageView fx:id="imgv" fitHeight="67.0" fitWidth="83.0" layoutX="11.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="514.0" layoutY="50.0" prefHeight="53.0" prefWidth="174.0" text="Restaurant" textFill="#ff6f7d">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="261.0" fitWidth="449.0" layoutX="284.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-Chef-Cook-Tasty-Food-Profession-Occupation-Dish-Restuarant-Helper-Uniform-Kitchen-Waiterqa74ipc.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="263.0" layoutY="369.0" prefHeight="43.0" prefWidth="169.0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="713.0" layoutY="228.0" prefHeight="47.0" prefWidth="156.0" text="Prix:Rs.350" textFill="#e11f1f">
+                           <font>
+                              <Font size="23.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="978.0" layoutY="520.0" onAction="#Menu1" prefHeight="49.0" prefWidth="192.0" text="Ajouter  à Vos Services" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="Home2" layoutX="1048.0" layoutY="64.0" mnemonicParsing="false" onAction="#HomeBack2" prefHeight="31.0" prefWidth="139.0" text="deconnexion" textFill="WHITE" />
+                  <AnchorPane layoutY="102.0" prefHeight="160.0" prefWidth="1201.0" style="-fx-background-color: #3f3f3f;">
+                     <children>
+                        <Button fx:id="Accueil" layoutX="33.0" layoutY="29.0" mnemonicParsing="false" onAction="#AccueilAction" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: #3f3f3f;" text="Accueil " textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="emplois" layoutX="203.0" layoutY="34.0" mnemonicParsing="false" onAction="#AfficherEmploisAction" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #3f3f3f;" text="Emploi du temps " textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="absence" layoutX="591.0" layoutY="30.0" mnemonicParsing="false" onAction="#afficherPunitionAction" prefHeight="60.0" prefWidth="205.0" style="-fx-background-color: #3f3f3f;" text="Punitions" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="punition" layoutX="963.0" layoutY="33.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="224.0" style="-fx-background-color: #3f3f3f;" text="Reclamations" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="restuarant" layoutX="632.0" layoutY="93.0" mnemonicParsing="false" onAction="#afficherEvent" prefHeight="25.0" prefWidth="156.0" style="-fx-background-color: #3f3f3f;" text="Events" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="transport" layoutX="460.0" layoutY="94.0" mnemonicParsing="false" onAction="#aficherclub" prefHeight="51.0" prefWidth="215.0" style="-fx-background-color: #3f3f3f;" text="Clubs" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="absence1" layoutX="451.0" layoutY="29.0" mnemonicParsing="false" onAction="#afficherAbsenceAction" prefHeight="60.0" prefWidth="169.0" style="-fx-background-color: #3f3f3f;" text="Absences " textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Button>
+                        <MenuButton layoutX="788.0" layoutY="33.0" mnemonicParsing="false" style="-fx-background-color: #3f3f3f;" text="resultats" textFill="WHITE">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#displayNote" text="notes" />
+                              <MenuItem mnemonicParsing="false" onAction="#displayBu" text="bulletin" />
+                           </items>
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </MenuButton>
+                        <Button fx:id="transport1" layoutX="14.0" layoutY="93.0" mnemonicParsing="false" onAction="#afficherTransportAction" prefHeight="51.0" prefWidth="248.0" style="-fx-background-color: #3f3f3f;" text="ligne de transport " textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="restuarant1" layoutX="238.0" layoutY="92.0" mnemonicParsing="false" onAction="#afficherRestaurantAction" prefHeight="54.0" prefWidth="278.0" style="-fx-background-color: #3f3f3f;" text="ligne de restaurants " textFill="WHITE">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="log1" fitHeight="87.0" fitWidth="139.0" layoutX="6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../build/classes/images/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="409.0" layoutY="-4.0" prefHeight="53.0" prefWidth="190.0" text="My school" textFill="#ff6f7d">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="user" layoutX="993.0" layoutY="1.0" prefHeight="54.0" prefWidth="208.0" textFill="#ff6f7d">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

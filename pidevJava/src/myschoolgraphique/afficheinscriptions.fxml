@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1019.0" prefWidth="1615.0" style="-fx-background-color: #FFE7D5;" stylesheets="@../pidevfinal/styleAjout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myschoolgraphique.AfficheinscriptionsController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="1.0" layoutY="-32.0" onDragDetected="#AjouterCLUB" prefHeight="1051.0" prefWidth="1509.0" style="-fx-background-insets: #ea7fa1;" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@../../../../../Desktop/Documents/NetBeansProjects/pidevFinal/src/pidevfinal/eleveacceuil.css" />
+         </stylesheets>
+         <children>
+            <Accordion layoutX="379.0" layoutY="127.0" />
+            <Label fx:id="msg" layoutX="644.0" layoutY="127.0" prefHeight="21.0" prefWidth="105.0" />
+            <TextField fx:id="search" layoutX="918.0" layoutY="367.0" onAction="#RechercheAV" prefHeight="25.0" prefWidth="222.0" />
+            <Label layoutX="681.0" layoutY="364.0" prefHeight="17.0" prefWidth="222.0" text="Chercher dans la liste " textFill="#ff0d62">
+               <font>
+                  <Font name="Monotype Corsiva" size="27.0" />
+               </font></Label>
+            <Button fx:id="accepter" layoutX="547.0" layoutY="365.0" mnemonicParsing="false" onAction="#accepter" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #FFBEAC;" text="Accepter" textFill="#ffffffb5">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font></Button>
+            <Button fx:id="refuser" layoutX="397.0" layoutY="365.0" mnemonicParsing="false" onAction="#refuser" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #FFBEAC;" text="Refuser" textFill="WHITE">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font></Button>
+            <Label layoutX="681.0" layoutY="278.0" prefHeight="62.0" prefWidth="559.0" text="Traitement des inscriptions">
+               <font>
+                  <Font name="Monotype Corsiva" size="48.0" />
+               </font>
+            </Label>
+            <ScrollPane layoutX="435.0" layoutY="485.0" prefHeight="371.0" prefWidth="1005.0" style="-fx-background-color: #FFBEAC;">
+               <content>
+                  <TableView fx:id="tableView" blendMode="GREEN" prefHeight="468.0" prefWidth="1015.0">
+                     <columns>
+                        <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+                        <TableColumn fx:id="iduser" prefWidth="222.0" text="iduser" />
+                        <TableColumn fx:id="idclub" prefWidth="204.0" text="idclub" />
+                        <TableColumn fx:id="stat" prefWidth="210.0" text="stat" />
+                     </columns>
+                  </TableView>
+               </content>
+            </ScrollPane>
+            <Button fx:id="export" layoutX="1217.0" layoutY="365.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #FFBEAC;" text="Export" textFill="WHITE">
+               <font>
+                  <Font name="Monotype Corsiva" size="18.0" />
+               </font></Button>
+            <AnchorPane layoutY="19.0" prefHeight="1032.0" prefWidth="319.0" style="-fx-background-color: #FF6F7D;">
+               <children>
+                  <AnchorPane layoutX="17.0" prefHeight="229.0" prefWidth="276.0">
+                     <children>
+                        <Label layoutX="6.0" layoutY="14.0" prefHeight="34.0" prefWidth="264.0" text="Année scolaire:  2020/2021" textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="26.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="ecole" fitHeight="146.0" fitWidth="177.0" layoutX="86.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/high-school.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="86.0" layoutY="190.0" prefHeight="41.0" prefWidth="159.0" text="My school ">
+                           <font>
+                              <Font name="Monotype Corsiva" size="31.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutY="226.0" prefHeight="8.0" prefWidth="299.0" style="-fx-background-color: #FFFFFF;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="233.0" prefHeight="101.0" prefWidth="270.0">
+                     <children>
+                        <ImageView fx:id="dash" fitHeight="64.0" fitWidth="85.0" layoutX="122.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/maison-png-8.png" />
+                           </image>
+                        </ImageView>
+                        <Button id="button" fx:id="dashboard" layoutX="69.0" layoutY="59.0" mnemonicParsing="false" onAction="#dashboardButtonAction" prefHeight="64.0" prefWidth="168.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@../pidevfinal/styleAjout.css" text="Dashboard" textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="32.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="7.0" layoutY="118.0" prefHeight="8.0" prefWidth="292.0" style="-fx-background-color: #FFFFFF;" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="14.0" layoutY="355.0" prefHeight="153.0" prefWidth="277.0">
+                     <children>
+                        <Button id="button" fx:id="enseignant" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#enseignantButtonAction" prefHeight="53.0" prefWidth="201.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@../pidevfinal/styleAjout.css" text="Enseignants " textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="32.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="-4.0" layoutY="118.0" prefHeight="8.0" prefWidth="281.0" style="-fx-background-color: #FFFFFF;" />
+                        <ImageView fx:id="res" fitHeight="64.0" fitWidth="62.0" layoutX="93.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="35.0" layoutY="518.0" prefHeight="84.0" prefWidth="200.0">
+                     <children>
+                        <Button id="button" fx:id="Résultats" layoutX="31.0" layoutY="15.0" mnemonicParsing="false" onAction="#RésultatsButtonAction" prefHeight="57.0" prefWidth="201.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@../pidevfinal/styleAjout.css" text="Emplois" textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="28.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="-30.0" layoutY="68.0" prefHeight="8.0" prefWidth="292.0" style="-fx-background-color: #FFFFFF;" />
+                        <ImageView fx:id="trans" fitHeight="62.0" fitWidth="62.0" layoutX="85.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/e06899eb675d084004067ef882f706d3.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="6.0" layoutY="632.0" prefHeight="103.0" prefWidth="264.0">
+                     <children>
+                        <Button id="button" fx:id="transport" layoutX="47.0" layoutY="20.0" mnemonicParsing="false" onAction="#transportButtonAction" prefHeight="64.0" prefWidth="168.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@../pidevfinal/styleAjout.css" text="Transport " textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="32.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="3.0" layoutY="75.0" prefHeight="8.0" prefWidth="281.0" style="-fx-background-color: #FFFFFF;" />
+                        <AnchorPane layoutX="22.0" layoutY="93.0" prefHeight="74.0" prefWidth="262.0">
+                           <children>
+                              <Button id="button" fx:id="message" layoutX="32.0" layoutY="22.0" mnemonicParsing="false" onAction="#messageButtonAction" prefHeight="57.0" prefWidth="178.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@../pidevfinal/styleAjout.css" text="Message" textFill="WHITE">
+                                 <font>
+                                    <Font name="Monotype Corsiva" size="29.0" />
+                                 </font>
+                              </Button>
+                              <AnchorPane layoutX="-25.0" layoutY="75.0" prefHeight="8.0" prefWidth="292.0" style="-fx-background-color: #FFFFFF;" />
+                              <ImageView fx:id="ms" fitHeight="49.0" fitWidth="50.0" layoutX="97.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../Desktop/EYA/secured-letter.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+                  <ImageView fx:id="ens" fitHeight="50.0" fitWidth="50.0" layoutX="118.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Desktop/EYA/90477.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="17.0" layoutY="819.0" prefHeight="83.0" prefWidth="267.0">
+                     <children>
+                        <Button id="button" fx:id="evenement" layoutX="56.0" layoutY="34.0" mnemonicParsing="false" onAction="#evenementButtonAction" prefHeight="58.0" prefWidth="168.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@../pidevfinal/styleAjout.css" text="Evenement " textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="30.0" />
+                           </font>
+                        </Button>
+                        <AnchorPane layoutX="-13.0" layoutY="77.0" prefHeight="8.0" prefWidth="299.0" style="-fx-background-color: #FFFFFF;" />
+                        <ImageView fx:id="ev" fitHeight="61.0" fitWidth="76.0" layoutX="106.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/datum-png-2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="11.0" layoutY="925.0" prefHeight="83.0" prefWidth="292.0">
+                     <children>
+                        <Button id="button" fx:id="menu" layoutX="75.0" layoutY="40.0" mnemonicParsing="false" onAction="#menuButtonAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-radius: 90; -fx-background-color: #FF6F7D;" stylesheets="@../pidevfinal/styleAjout.css" text="Menu" textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="29.0" />
+                           </font>
+                        </Button>
+                        <ImageView fx:id="me" fitHeight="73.0" fitWidth="81.0" layoutX="90.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/3tvJykCGap5Qed228mt1KXL1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="507.0" layoutY="53.0" prefHeight="191.0" prefWidth="242.0" style="-fx-background-color: #FFBEAC;">
+               <children>
+                  <ImageView fx:id="clu" fitHeight="87.0" fitWidth="201.0" layoutX="25.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ajoutClub.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="1.0" layoutY="127.0" mnemonicParsing="false" onAction="#AffecterClub" prefHeight="64.0" prefWidth="241.0" style="-fx-background-color: #FFBEAC;" text="Ajouter Club" textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="29.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="1200.0" layoutY="53.0" prefHeight="191.0" prefWidth="233.0" style="-fx-background-color: #FFBEAC;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="parti" fitHeight="126.0" fitWidth="146.0" layoutX="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/part.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="17.0" layoutY="120.0" mnemonicParsing="false" onAction="#AffecterPart" prefHeight="64.0" prefWidth="200.0" style="-fx-background-color: #FFBEAC;" text="Participation" textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="29.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="991.0" layoutY="53.0" prefHeight="191.0" prefWidth="209.0" style="-fx-background-color: #FFBEAC;">
+               <children>
+                  <ImageView fx:id="insc" fitHeight="113.0" fitWidth="112.0" layoutX="41.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/inscription.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="5.0" layoutY="122.0" mnemonicParsing="false" onAction="#INSCRIPTIONS" prefHeight="64.0" prefWidth="200.0" style="-fx-background-color: #FFBEAC;" text="Inscription" textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="29.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="749.0" layoutY="53.0" prefHeight="191.0" prefWidth="241.0" style="-fx-background-color: #FFBEAC;">
+               <children>
+                  <Button layoutX="1.0" layoutY="127.0" mnemonicParsing="false" onAction="#AjouterEVENT" prefHeight="64.0" prefWidth="241.0" style="-fx-background-color: #FFBEAC;" text="Ajouter  Event" textFill="WHITE">
+                     <font>
+                        <Font name="Monotype Corsiva" size="29.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="even" fitHeight="126.0" fitWidth="112.0" layoutX="61.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/ajoutEvent.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="deconnexion" layoutX="1510.0" layoutY="101.0" onAction="#deconnexionAction" prefHeight="31.0" prefWidth="62.0" />
+   </children>
+</AnchorPane>

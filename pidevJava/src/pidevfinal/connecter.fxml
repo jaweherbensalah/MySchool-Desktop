@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="391.0" prefWidth="642.0" stylesheets="@../../../../../Desktop/finallllllllllllllllllllll/pidevFinal/src/pidevfinal/styleAjout.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevfinal.ConnecterController">
+   <children>
+      <MenuBar>
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Revert" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+      <AnchorPane layoutX="-1.0" layoutY="2.0" prefHeight="391.0" prefWidth="642.0">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="2.0" maxHeight="-1.0" maxWidth="-1.0" prefHeight="391.0" prefWidth="642.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="307.0" layoutY="89.0" prefHeight="302.0" prefWidth="337.0" style="-fx-background-color: #FFBEAC;">
+                     <children>
+                        <ImageView fx:id="user" fitHeight="150.0" fitWidth="200.0" layoutX="101.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/28398.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1.0" layoutY="22.0" prefHeight="67.0" prefWidth="642.0" style="-fx-background-color: #FF6F7D;">
+                     <children>
+                        <Label layoutX="238.0" layoutY="13.0" prefHeight="45.0" prefWidth="189.0" text="My School " textFill="WHITE">
+                           <font>
+                              <Font name="Monotype Corsiva" size="34.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="logo" fitHeight="104.0" fitWidth="109.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../Desktop/EYA/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="89.0" prefHeight="302.0" prefWidth="307.0" style="-fx-background-color: #FF6F7D;">
+                     <children>
+                        <TextField fx:id="nom" layoutX="38.0" layoutY="57.0" promptText="non" style="-fx-background-radius: 60;" />
+                        <PasswordField fx:id="mdp" layoutX="38.0" layoutY="151.0" prefHeight="0.0" prefWidth="187.0" promptText="mot de passe" style="-fx-background-radius: 80;" />
+                        <Button fx:id="connecter" layoutX="67.0" layoutY="242.0" mnemonicParsing="false" onAction="#seconnecterAction" prefHeight="37.0" prefWidth="150.0" style="-fx-background-color: #FFBEAC;" text="se connecter " textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

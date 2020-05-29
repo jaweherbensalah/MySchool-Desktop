@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 mars 2020, 17:12:08
+    Author     : Asus
+*/
+.cadre1 {
+    -fx-background-color : #FF6F7D; 
+    
+}
+.cadre2 {
+   -fx-background-color : #FEC3AC; 
+}
+.textfield {
+    -fx-background-radius : 90; 
+}
+.button
+{
+    -fx-background-radius : 90; 
+    -fx-background-color :  #FE96A0; 
+}
+.button:hover
+{
+   -fx-background-color : #FFD0BD;   
+}
+.table-row-cell:selected {
+   -fx-background-color:  #FF6F7D;
+}
+.table-row-cel:odd
+{
+  -fx-background-color: #FFB6B8; 
+}
+.table-row-cel:even
+{
+  -fx-background-color: #FFB6B8; 
+}

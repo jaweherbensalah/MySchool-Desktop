@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidevfinal.TestController">
+   <children>
+      <Label fx:id="msg" layoutX="356.0" layoutY="317.0" prefHeight="21.0" prefWidth="137.0" />
+      <ComboBox fx:id="choix" layoutX="198.0" layoutY="241.0" onAction="#changer_contenu" prefWidth="150.0" />
+      <TableView fx:id="tableaux" layoutX="379.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableaux2" layoutX="44.0" layoutY="21.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
